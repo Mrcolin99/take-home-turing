@@ -12,7 +12,7 @@ const Details = () => {
 
     const showMedia = () => {
         if (details.multimedia) {
-            return <img src={details.multimedia[1].url} />
+            return <img className='main-img' src={details.multimedia[1].url} />
         }
     }
 
@@ -20,8 +20,11 @@ const Details = () => {
         <div>
             <h3>{details.title}</h3>
             <p>{details.byline}</p>
+            <p>{details.published_date}</p>
+            <p>Section: {details.section} {details.subsection}</p>
             {showMedia()}
             <p>{details.abstract}</p>
+            <a href={details.url}>Read the full article here</a>
         </div>
     )
 }
