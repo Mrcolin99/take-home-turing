@@ -1,4 +1,4 @@
-# MTG Deck Builder
+# News Stand
 ## Description:
 This application allows users to browse through the latest popular stories from the New York Times
 
